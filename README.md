@@ -31,7 +31,7 @@ Write a function `cashOut()` that calculates a 1.75% cash-out charge based on th
 | "101"     | "Invalid"  |
 | "mewauu"  | "Invalid"  |
 
-### 💡 Hint
+---
 
 ## 🔹 Problem 02: Validate Email
 
@@ -58,18 +58,19 @@ A string representing an email
 ### 🧪 Sample Inputs & Outputs  
 
 | Input                        | Output     |
-|-----------------------------|------------|
-| `"ferdous@gmail.com"`       | `true`     |
-| `"-king@yahoo.com"`         | `false`    |
-| `["jhankar@hero.com"]`      | `"Invalid"`|
-| `"programming-hero.com"`    | `false`    |
-| `true`                      | `"Invalid"`|
+|------------------------------|------------|
+| `"ferdous@gmail.com"`        | `true`     |
+| `"-king@yahoo.com"`          | `false`    |
+| `["jhankar@hero.com"]`       | `"Invalid"`|
+| `"programming-hero.com"`     | `false`    |
+| `true`                       | `"Invalid"`|
 
 ### 🧾 Function Signature
-```js
 function validEmail(email) {
-    // Your code here
+// Your code here
 }
+
+---
 
 ## 🔹 Problem 03: Who Will Win? (🥭 Mango / 🍌 Banana)
 
@@ -87,7 +88,7 @@ Example: `["mango", "banana", "Na-Vote", "mango"]`
 - Return `"Invalid"` if input is not an array
 
 ### 📌 Constraints  
-- Only count votes that exactly match `"mango"` or `"banana"` (case-sensitive)
+- Only count votes that exactly match `"mango"` or `"banana"` (case-sensitive)  
 - Must `return` the result — **do not use `console.log()`**
 
 ### 🧪 Sample Inputs & Outputs  
@@ -102,11 +103,7 @@ Example: `["mango", "banana", "Na-Vote", "mango"]`
 | `"mango, banana"`                                    | `"Invalid"`|
 | `["mango", "BananA", "na vote", "na vote"]`          | `"Mango"`  |
 
-### 🧾 Function Signature
-```js
-function electionResult(votes) {
-    // Your code here
-}
+---
 
 ## 🔹 Problem 04: Detect the Perfect Best Friend
 
@@ -114,16 +111,16 @@ function electionResult(votes) {
 Write a function `isBestFriend()` that determines if two individuals are truly best friends based on their roll numbers and best friend references.
 
 ### 📥 Input  
-Two **objects**, each containing the following properties:
-- `name`: a `string`
-- `roll`: a `number`
+Two **objects**, each containing the following properties:  
+- `name`: a `string`  
+- `roll`: a `number`  
 - `bestFriend`: a `number` (refers to another person's roll)
 
 ### 🚀 Output  
 - Return `true` if:  
   - `f1.bestFriend === f2.roll` **and**  
-  - `f2.bestFriend === f1.roll`
-- Return `false` if they don't match this condition
+  - `f2.bestFriend === f1.roll`  
+- Return `false` if they don't match this condition  
 - Return `"Invalid"` if **either input is not an object**
 
 ### 📌 Constraints  
@@ -138,22 +135,3 @@ Two **objects**, each containing the following properties:
 | `{ name: "hashem", roll: 21, bestFriend: 1 }, { name: "kashem", roll: 1, bestFriend: 2 }`| `false`     |
 | `"hashem", { name: "kashem", roll: 2, bestFriend: 11 }`                                  | `"Invalid"` |
 | `{ name: "hashem", roll: 1, bestFriend: 1 }, { name: "kashem", roll: 1, bestFriend: 1 }` | `true`      |
-
-### 🧾 Function Signature
-```js
-function isBestFriend(f1, f2) {
-    // Your code here
-}
-
-## 🔹 Problem 05: Calculate Total Video Watch Time
-
-### 📄 Description  
-Write a function `calculateWatchTime()` that takes an array of video durations (in seconds) and returns the total time in hours, minutes, and seconds.
-
-### 📥 Input  
-An **array** of numbers, where each number represents video watch time in **seconds**.
-
-### 🚀 Output  
-- Return an **object** with total time formatted as:
-```js
-{ hour: X, minute: Y, second: Z }
