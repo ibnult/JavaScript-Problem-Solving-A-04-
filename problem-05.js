@@ -25,3 +25,4 @@ function calculateWatchTime(times) {
 const timesArray = [3600, 1800, 45];
 const result = calculateWatchTime(timesArray);
 console.log(result);
+//
